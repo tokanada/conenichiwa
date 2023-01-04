@@ -1,6 +1,5 @@
 package com.tokanada.conenichiwa.mixin;
 
-import com.tokanada.conenichiwa.ConenichiwaMain;
 import com.tokanada.conenichiwa.RandomVoice;
 import eu.midnightdust.motschen.rocks.block.Pinecone;
 import net.minecraft.block.Block;
@@ -20,13 +19,25 @@ public class PineconeMixin extends Block {
         super(settings);
     }
 
+    public void onBreak(World world, BlockPos blockPos, BlockState state, PlayerEntity player) {
+        if (!world.isClient) {
+            world.playSound(
+                    null, // Player - if non-null, will play sound for every nearby player *except* the specified player
+                    blockPos, // The position of where the sound will come from
+                    RandomVoice.getBreakRandomVoice(), // The sound that will play
+                    SoundCategory.BLOCKS, // This determines which of the volume sliders affect this sound
+                    1f, //Volume multiplier, 1 is normal, 0.5 is half volume, etc
+                    1f // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc
+            );
+        }
+    }
     @Override
     public ActionResult onUse(BlockState blockState, World world, BlockPos blockPos, PlayerEntity placedBy, Hand hand, BlockHitResult blockHitResult) {
         if (!world.isClient) {
             world.playSound(
                     null, // Player - if non-null, will play sound for every nearby player *except* the specified player
                     blockPos, // The position of where the sound will come from
-                    RandomVoice.getRandomVoice(), // The sound that will play
+                    RandomVoice.getConeRandomVoice(), // The sound that will play
                     SoundCategory.BLOCKS, // This determines which of the volume sliders affect this sound
                     1f, //Volume multiplier, 1 is normal, 0.5 is half volume, etc
                     1f // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc

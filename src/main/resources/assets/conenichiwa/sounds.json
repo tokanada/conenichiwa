@@ -33,6 +33,26 @@
     "sounds": [
       "conenichiwa:cone7"
     ]
+  },
+  "break1": {
+    "sounds": [
+      "conenichiwa:break1"
+    ]
+  },
+  "break2": {
+    "sounds": [
+      "conenichiwa:break2"
+    ]
+  },
+  "break3": {
+    "sounds": [
+      "conenichiwa:break3"
+    ]
+  },
+  "break4": {
+    "sounds": [
+      "conenichiwa:break4"
+    ]
   }
 }
 

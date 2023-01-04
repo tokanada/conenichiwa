@@ -30,6 +30,19 @@ public class ConenichiwaMain implements ModInitializer {
 	public static final Identifier CONE7 = new Identifier("conenichiwa:cone7");
 	public static SoundEvent CONE7_EVENT = new SoundEvent(CONE7);
 
+
+	public static final Identifier BREAK1 = new Identifier("conenichiwa:break1");
+	public static SoundEvent BREAK1_EVENT = new SoundEvent(BREAK1);
+
+	public static final Identifier BREAK2 = new Identifier("conenichiwa:break2");
+	public static SoundEvent BREAK2_EVENT = new SoundEvent(BREAK2);
+
+	public static final Identifier BREAK3 = new Identifier("conenichiwa:break3");
+	public static SoundEvent BREAK3_EVENT = new SoundEvent(BREAK3);
+
+	public static final Identifier BREAK4 = new Identifier("conenichiwa:break4");
+	public static SoundEvent BREAK4_EVENT = new SoundEvent(BREAK4);
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -42,5 +55,10 @@ public class ConenichiwaMain implements ModInitializer {
 		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.CONE5, CONE5_EVENT);
 		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.CONE6, CONE6_EVENT);
 		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.CONE7, CONE7_EVENT);
+
+		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.BREAK1, BREAK1_EVENT);
+		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.BREAK2, BREAK2_EVENT);
+		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.BREAK3, BREAK3_EVENT);
+		Registry.register(Registry.SOUND_EVENT, ConenichiwaMain.BREAK4, BREAK4_EVENT);
 	}
 }
