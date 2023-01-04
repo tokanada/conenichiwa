@@ -1,0 +1,38 @@
+{
+  "cone1": {
+    "sounds": [
+      "conenichiwa:cone1"
+    ]
+  },
+  "cone2": {
+    "sounds": [
+      "conenichiwa:cone2"
+    ]
+  },
+  "cone3": {
+    "sounds": [
+      "conenichiwa:cone3"
+    ]
+  },
+  "cone4": {
+    "sounds": [
+      "conenichiwa:cone4"
+    ]
+  },
+  "cone5": {
+    "sounds": [
+      "conenichiwa:cone5"
+    ]
+  },
+  "cone6": {
+    "sounds": [
+      "conenichiwa:cone6"
+    ]
+  },
+  "cone7": {
+    "sounds": [
+      "conenichiwa:cone7"
+    ]
+  }
+}
+
